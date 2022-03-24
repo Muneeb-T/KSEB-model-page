@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="/assets/img/icon.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style/style.css">
+
+    <script src="https://kit.fontawesome.com/2b0fe9856a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>KSEB Web self service</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row border-bottom border-warning p-2">
+                <div class="col d-flex justify-content-start justify-content-md-center">
+                    <img class="img img-fluid"
+                        src="https://wss.kseb.in/selfservices/resources/Images/misc/KSEB_WSS_Logo.png"
+                        alt="KSEB Self webservices Logo">
+                </div>
+                <div class="col d-none d-md-flex align-items-center justify-content-center helpline">
+                    <a href="#" class="d-flex text-decoration-none helpline">
+                        <img class="img helpline-phone-icon"
+                            src="https://wss.kseb.in/selfservices/resources/Images/icons/phone_icon.png"
+                            alt="helpline phone icon">
+                        <div class="d-flex my-auto border border-warning rounded-pill px-4 fw-light">
+                            <p class="text-primary my-auto small">1912 / 0471-2555544
+                                <span class="text-secondary">(24 X 7 Helpline)</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <div class="container-fluid">
+            <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="quickpay.html">Quick pay</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="register-complaint.html">Register complaint/Services</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#">Complaint status</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#">New connection</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#">User guide</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="mt-3 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col">
+                            <a class="btn btn-warning px-3 py-0 btn-sm rounded-pill float-end text-uppercase"
+                                href="index.html">
+                                Consumer sign in
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="bg-primary rounded-3 my-2 p-1 text-white">
+                                <h4 class="ms-5">File New Complaint / Service Request</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <form class="row text-capitalize" id="complaint-form">
+                                <div class="mb-3 col-12 col-md-6">
+                                    <label class="form-label float-start mb-0 text-muted"
+                                        for="complaint_service_type_selection">Complaint/Service Type:</label>
+                                    <select class="form-select light-gray-background border-0 text-uppercase"
+                                        id="complaint_service_type_selection">
+                                        <option selected value="Street light">Street light related</option>
+                                        <option value="Billing">Billing related</option>
+                                        <option value="Meter">Meter related</option>
+                                        <option value="Voltage">Voltage related</option>
+                                        <option value="No power">No power related</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3 col-12 col-md-6">
+                                    <label class="form-label float-start mb-0 text-muted"
+                                        for="landmark">Landmark:</label>
+                                    <input type="text" id="landmark" name="landmark"
+                                        class="form-control shadow-none" placeholder="Landmark">
+                                </div>
+                                <div class="mb-3 col-12 col-md-6">
+                                    <label class="form-label float-start mb-0 text-muted"
+                                        for="category">Category:</label>
+                                    <select class="form-select light-gray-background border-0 text-uppercase"
+                                        id="category">
+                                        <option value="Switched off">Street light - Not switched off</option>
+                                        <option value="Not working">Street light - Not working</option>
+                                        <option value="Loose contact / flickering">Street light - Loose contact / Flickering</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3 col-12 col-md-6">
+                                    <label class="form-label required float-start mb-0 text-muted"
+                                        for="consumer_number">Consumer number:</label>
+                                    <input type="number" id="consumer_number" name="consumer_number"
+                                        class="form-control shadow-none" placeholder="Consumer number">
+                                </div>
+
+                                <div class="mb-3 col-12 col-md-6">
+                                    <label class="form-label float-start mb-0 text-muted required" for="contact_person">Contact
+                                        person:</label>
+                                    <input type="text" id="contact_person" name="contact_person"
+                                        class="form-control shadow-none" placeholder="Contact person">
+                                </div>
+                                <div class="mb-3 col-12 col-md-6">
+                                    <label class="form-label float-start mb-0 text-muted required"
+                                        for="description">Problem description:</label>
+                                    <textarea id="problem_description" name="problem_description" rows="2"
+                                        class="form-control shadow-none" placeholder="Problem description"></textarea>
+                                </div>
+                                <div class="mb-3 col-12 col-md-6">
+                                    <label class="form-label required float-start mb-0 text-muted"
+                                        for="mobile_number">Mobile number:</label>
+                                    <input type="number" id="mobile_number" name="mobile_number"
+                                        class="form-control  shadow-none" placeholder="Mobile number">
+                                </div>
+                                <div class="mb-3 col-12 col-md-6">
+                                    <label class="form-label float-start mb-0 text-muted"
+                                        for="address">Address:</label>
+                                    <textarea id="address" name="address" rows="2"
+                                        class="form-control shadow-none" placeholder="Address"></textarea>
+                                </div>
+                                <div class="mb-3 col-12 col-md-6">
+                                    <label class="form-label float-start required mb-0 text-muted"
+                                        for="district">District:</label>
+                                    <select name="district"
+                                        class="form-select light-gray-background border-0 text-uppercase"
+                                        id="district">
+                                        <option selected>--select district--</option>
+                                        <option>Thiruvanandhapuram</option>
+                                        <option>Kollam</option>
+                                        <option>Pathanamthitta</option>
+                                        <option>Alappuzha</option>
+                                        <option>Kottayam</option>
+                                        <option>Idukki</option>
+                                        <option>Ernakulam</option>
+                                        <option>Thrissur</option>
+                                        <option>Wayanad</option>
+                                        <option>Malappuram</option>
+                                        <option>Kozhikkod</option>
+                                        <option>Palakkad</option>
+                                        <option>Kannur</option>
+                                        <option>Kazargod</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3 col">
+                                    <label class="form-label required float-start text-muted"
+                                        for="captcha">Verfication code</label>
+                                    <img class="img ms-2" src="/assets/img/captcha2.image" id="captcha-image"
+                                        alt="Kseb captcha Verfication">
+                                    <button id="change-captcha" class="btn btn-primary btn-sm rounded-circle">
+                                        <i class="fa-solid fa-rotate"></i>
+                                    </button>
+                                    <input type="text" class="form-control mt-3" name="verification_code"
+                                        id="verification_code" placeholder="Enter verification code">
+                                </div>
+                                <hr>
+                                <div class="mb-3 col d-flex justify-content-center">
+                                    <button type="reset" class="btn btn-secondary me-2 px-4 btn-sm">Cancel</button>
+                                    <button type="submit" class="btn btn-primary px-4 btn-sm">Submit complaint</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="bg-secondary mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center justify-content-center fs-2">
+                    <a class="text-decoration-none text-light" href="https://twitter.com/KSEBLtd">
+                        <i class="fa-brands fa-twitter-square me-2"></i>
+                    </a>
+                    <a class="text-decoration-none text-light"
+                        href="https://www.youtube.com/channel/UCAK0P7b-eQ7u5waz93Ld_Ww">
+                        <i class="fa-brands fa-youtube me-2"></i>
+                    </a>
+                    <a class="text-decoration-none text-light" href="https://facebook.com/ksebl">
+                        <i class="fa-brands fa-facebook-square me-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row text-light">
+                <div class="col-12 col-md-3">
+                    <p class="text-center">
+                        <small>© 2020 KSEB-WSS. All Rights Reserved</small>
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="text-center">
+                        <small>Best viewed in Firefox 30.x or higher, Google Chrome 40.x or higher, IE
+                            10.x or higher browsers with resolution 1600x900
+                        </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

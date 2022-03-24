@@ -1,0 +1,91 @@
+body {
+    font-family:'Archivo Narrow', sans-serif;
+}
+
+
+.helpline{
+    position: relative;
+}
+
+.helpline-phone-icon{
+    position: absolute;
+    transform: translateY(-25%) translateX(-50%);
+}
+
+nav{
+    background-color: rgb(216, 216, 216);
+}
+
+.nav-item:hover{
+    background-color: rgb(201, 201, 201);
+}
+
+.light-gray-background{
+    background-color: rgb(228, 228, 228);
+}
+
+
+
+
+.links div button{
+    background-image: url(/assets/img/links-background.webp);
+    border: none;
+}
+
+@media screen and (min-width: 0px) {
+    .links div button{
+        height: 7rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .links div button{
+        height: 9rem;
+    }
+}
+
+.links div button:hover{
+    background-image: linear-gradient(transparent, rgba(28, 40, 28, 0.234)),url(/assets/img/links-background.webp);
+}
+
+.links div button *{
+    margin: 0;
+    text-align: start;
+}
+
+.required::before{
+    content: '*';
+    color: red;
+    margin-right: 2px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+hr{
+    color: rgb(131, 131, 131);
+}
+
+.notice-icon{
+    width: 2rem;
+}
+
+#complaint-description{
+    resize: none;
+}
+
+
+.validation-message{
+    color: red;
+}
+
+
+
