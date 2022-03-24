@@ -130,7 +130,7 @@ $(document).ready(() => {
         e.preventDefault();
         let images = ["captcha1", "captcha2", "captcha3", "captcha4", "captcha5"];
         const random = Math.floor(Math.random() * images.length);
-        $('#captcha-image').attr('src', '/assets/img/' + images[random] + '.image');
+        $('#captcha-image').attr('src', 'assets/img/' + images[random] + '.image');
     });
 
 
